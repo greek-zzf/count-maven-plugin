@@ -1,0 +1,17 @@
+
+<project>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.example</groupId>
+                <artifactId>counter-maven-plugin</artifactId>
+                <version>1.0</version>
+                <configuration>
+                    <sourceDirectory>${basedir}/src/test/java/testDirectory/java</sourceDirectory>
+                    <testSourceDirectory>${basedir}/src/test/java/testDirectory/test</testSourceDirectory>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
+
