@@ -11,20 +11,17 @@ import java.nio.file.Files;
  */
 public class CountMojoTest extends AbstractMojoTestCase {
 
+
     private static final String PLUGIN_CONFIG = "src/test/java/count-test-plugin-config.xml";
 
     /**
      * @throws Exception
      */
     public void testMojoGoal() throws Exception {
-        File testPom = getPom();
-        CountMojo mojo = (CountMojo) lookupMojo("countCode", testPom);
 
+        CountMojo mojo = (CountMojo) lookupMojo("countCode", getPom());
         assertNotNull(mojo);
-
-
-        // generateTestFile()
-        // mojo.execute();
+        mojo.execute();
     }
 
 
